@@ -145,7 +145,6 @@ git commit -m "Initial commit"
 ```bash
 git status
 ```
-
 ##### 3.9 แก้ไขไฟล์ greeting.txt
 ```bash
 echo "Greeting message line 2" >> greeting.txt
