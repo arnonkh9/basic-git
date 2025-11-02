@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Demo</title>
+    <style>
+        :root{color-scheme:light dark}
+        body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;max-width:900px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#111}
+        header,footer{padding:.5rem 0}
+        header h1{margin:0 0 .25rem}
+        button{padding:.5rem 1rem;border-radius:6px;border:1px solid #ccc;background:#f7f7f7;cursor:pointer}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Demo</h1>
+        <p>Minimal starter template.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Interactive example</h2>
+            <p>Click the button to update the message below.</p>
+            <button id="btn">Click me</button>
+            <p id="msg" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <small>Generated template</small>
+    </footer>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', () => {
+            document.getElementById('msg').textContent = 'Clicked at ' + new Date().toLocaleTimeString();
+        });
+    </script>
+</body>
+</html>
